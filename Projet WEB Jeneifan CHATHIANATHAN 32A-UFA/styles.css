@@ -101,43 +101,43 @@ body {
   background-color: #666;
 }
 
-/* DIV2 */
-.div2 ul {
+/* Box */
+.box ul {
   list-style: none;
   color: #000;
 }
-.div2 a {
+.box a {
   text-decoration: none;
 }
 
-/* DIV3 */
-.div3 ul {
+/* Box2 */
+.box2 ul {
   list-style: none;
   color: #000;
 }
-.div3 a {
+.box2 a {
   text-decoration: none;
 }
 
-/* DIV4 */
-.div4 ul {
+/* Box3 */
+.box3 ul {
   list-style: none;
   color: #000;
   margin-top: 40px;
 }
 
-.div4 a {
+.box3 a {
   text-decoration: none;
 }
 
-/* DIV5 */
-.div5 ul {
+/* Box4 */
+.box4 ul {
   list-style: none;
   color: #000;
   margin-top: 40px;
 }
 
-.div5 a {
+.box4 a {
   text-decoration: none;
 }
 
@@ -350,7 +350,7 @@ body {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color:orange;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
