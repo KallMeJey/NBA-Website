@@ -11,11 +11,12 @@
     <!-- Pour récuperer la police -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Pour afficher les icônes, on fait appel à cet librairie -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+
   </head>
 
   <body>
+
     <nav class="entete">
       <div class="nba">
         <img src="images/LogoNBA.png" alt="Logo NBA" />
@@ -47,6 +48,16 @@
         </div>
       </div>
     </nav>
+    
+    <div class="Slide">
+      <img class="mySlides" src="images/icone-trois-barre.png">
+      <img class="mySlides" src="images/carousel1.jpg">
+    </div>
+   
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    
 
     <!-- Div regroupant la description -->
     <div class="center">
@@ -262,5 +273,8 @@
         <a href="https://twitch.com" class="fa fa-twitch style"></a>
       </div>
     </footer>
+    
+      <!-- Pour lancer le script js -->
+      <script src="script.js"></script>
   </body>
 </html>
