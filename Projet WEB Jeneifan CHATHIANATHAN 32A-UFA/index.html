@@ -11,12 +11,12 @@
     <!-- Pour récuperer la police -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Pour afficher les icônes, on fait appel à cet librairie -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
   </head>
 
   <body>
-
+    <!-- Entete -->
     <nav class="entete">
       <div class="nba">
         <img src="images/LogoNBA.png" alt="Logo NBA" />
@@ -26,11 +26,10 @@
         </div>
       </div>
 
+    <!-- Entete à droite -->
       <div class="entete-droite">
-        <div class="numero style">
-          Contact the NBA: <span> (+1) 866-746-7622</span>
-        </div>
-
+        <div class="numero style"> Contact the NBA: <span> (+1) 866-746-7622</span></div>
+        <!-- Trait vertical -->
         <div class="trait-vertical style"></div>
 
         <div class="icone-reseaux-sociaux">
@@ -48,6 +47,29 @@
         </div>
       </div>
     </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="mySlides fade">
+          <img src="images/carousel1.jpg" style="width: 100%">
+          <div class="text">Lebron James' Lakers win tonight against the Pelicans</div>
+      </div>
+      <div class="mySlides fade">
+          <img src="images/carousel2.jpg" style="width: 100%">
+          <div class="caption text">The return of the Kevin Durant - Kyrie Irving duo</div>
+      </div>
+      <div class="mySlides fade">
+          <img src="images/carousel3.jpg" style="width: 100%">
+          <div class="caption text">Kobe Bryant, Tim Duncan and Kevin Garnett inducted into the 2020 Hall Of Fame</div>
+      </div>
+
+      <div class="button">
+
+          <a class="avant" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="apres" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+  </div>
     
   
 
@@ -58,15 +80,9 @@
         <!-- Sous-titre et description -->
         <h2 class="description-sous-titre">THIS IS WHY WE PLAY</h2>
         <p>
-          La National Basketball Association (NBA) est la principale ligue de
-          basket-ball au monde. Créée le 6 juin 1946 sous le nom de BAA
-          (Basketball Association of America), la ligue est renommée NBA en 1949
-          après sa fusion avec la NBL (National Basketball League). Elle est
-          l'une des quatre ligues professionnelles majeures du sport américain,
-          aux côtés de la NFL (football américain), de la MLB (baseball) et de
-          la NHL (hockey sur glace). Le siège de la NBA est situé dans l'Olympic
-          Tower au 645, de la 5e Avenue à New York. En 2015, les joueurs de la
-          NBA sont les sportifs les mieux payés au monde.
+          The National Basketball Association (NBA) is a professional basketball league in North America. The league is composed of 30 teams (29 in the United States and 1 in Canada) and is one of the four major professional sports leagues in the United States and Canada. It is the premier men's professional basketball league in the world. 
+          The league was founded in New York City on June 6, 1946, as the Basketball Association of America (BAA). It changed its name to the National Basketball Association on August 3, 1949, after merging with the competing National Basketball League (NBL). The NBA's regular season runs from October to April, with each team playing 82 games. The league's playoff tournament extends into June. As of 2020, NBA players are the world's best paid athletes by average annual salary per player. 
+          
         </p>
       </div>
 
@@ -76,9 +92,10 @@
       </div>
     </div>
 
+    <!-- Bloc Statistique -->
     <div class="Statistiques">
       <div id="stats">
-        <h2>Statistiques</h2>
+        <h2> Statistics </h2>
       </div>
 
       <div class="List-Statistiques">
@@ -101,53 +118,59 @@
       </div>
     </div>
 
+    <!-- Section avec les Statistiques : Meilleur scoreur, passeur, rebondeur, intercepteur -->
     <div class="section">
       <div class="section-image-wrapper">
         <img class="image__img" src="images/Image1.jpg" />
         <div class="image__overlay">
-          <div class="image__title">Meilleur Scoreur </div>
-          <p class="image__description">Le meilleur marqueur de la NBA en carrière demeure inchangé depuis le 5 avril 19841. Il s'agit de Kareem Abdul-Jabbar et ses 38 387 points en 20 saisons sur les parquets. Actuellement, 46 joueurs ont passé la barre des 20 000 points inscrits en carrière. Parmi ceux-ci, sept sont encore en activité.</p>
+          <div class="image__title">Scoring leaders </div>
+          <p class="image__description">
+            Michael Jordan has won the most scoring titles, with ten. Jordan and Chamberlain are the only players to have won seven consecutive scoring titles (this was also Chamberlain's career total). George Gervin, Allen Iverson and Kevin Durant have won four scoring titles in their career, and James Harden, George Mikan, Neil Johnston and Bob McAdoo have achieved it three times. Paul Arizin, Bob Pettit, Kareem Abdul-Jabbar, Shaquille O'Neal, Tracy McGrady, Kobe Bryant, Russell Westbrook and Stephen Curry have each won the scoring title twice.
+            </p>
         </div>
       </div>
 
       <div class="section-image-wrapper center-row-img-left">
         <img class="image__img" src="images/Image2.jpg" />
         <div class="image__overlay">
-          <div class="image__title">Meilleur Passeur </div>
-          <p class="image__description">Actuellement, cinq joueurs de cette liste sont encore en activité. Les passes décisives (assists) sont comptabilisées en National Basketball Association (NBA) depuis sa création en 1946. </p>
+          <div class="image__title">Assists leaders </div>
+          <p class="image__description">The NBA record for most career assists is held by John Stockton, with 15,806. Stockton also holds the NBA single season assist per game record with 14.5 during the 1989-1990 regular season. The highest career assist per game average in NBA history is held by Magic Johnson, with 11.2 assist per game. </p>
+
+
+        </p>
         </div>
       </div>
 
       <div class="section-image-wrapper center-row-img-right">
         <img class="image__img" src="images/Image3.jpg" />
         <div class="image__overlay">
-          <div class="image__title">Meilleur Rebondeur </div>
-          <p class="image__description">Les rebonds ont été pris en compte en NBA à partir de la saison NBA 1950-1951. Avant la saison NBA 1973-1974, il n'y avait pas de distinctions entre les rebonds défensifs et les rebonds offensifs ; néanmoins cela n'affecte en rien ce classement puisqu'il prend en compte la totalité des rebonds pris sur une carrière.
-
-            Le rebond est une caractéristique spécifique aux joueurs intérieurs (les pivots et les ailiers forts), c'est pour cette raison que la quasi-totalité des joueurs présents dans ce classement sont des joueurs ayant évolué à ces types de poste. Mais comme tout classement quantitatif, on y retrouve tout de même des joueurs ayant évolué à d'autres postes : en effet plus la carrière est longue et plus on a de chances de figurer dans un classement quantitatif. </p>
+          <div class="image__title">Rebounding leaders </div>
+          <p class="image__description"> Wilt Chamberlain holds the all-time records for total rebounds (2,149) and rebounds per game (27.2) in a season; both records were achieved in the 1960–61 season. He also holds the rookie records for total rebounds, with 1,941 in the 1959–60 season.] Among active players, Andre Drummond has the highest season rebound total (1,247) and the highest season rebounding average (15.99), both achieved in the 2017–18 season. </p>
         </div>
       </div>
 
       <div class="section-image-wrapper">
         <img class="image__img" src="images/Image4.jpg" />
         <div class="image__overlay">
-          <div class="image__title">Meilleur Intercepteur </div>
-          <p class="image__description">Actuellement, six joueurs de cette liste sont encore en activité. Les interceptions sont comptabilisées depuis la saison NBA 1973-1974. Certaines statistiques de joueurs se trouvent être sous-évaluées, soit du fait de la non-prise en compte des interceptions durant une grande partie de leur carrière en NBA antérieure à 1973, soit du fait d'avoir évolué dans la ligue concurrente de l'époque, la ABA. </p>
+          <div class="image__title">Steals leaders  </div>
+          <p class="image__description">In basketball, a steal is a "defensive action" that causes the opponent to turn the ball over. The National Basketball Association's (NBA) steal title is awarded to the player with the highest steals per game average in a given season. The steal title was first recognized in the 1973–74 season when statistics on steals were first compiled. To qualify for the steal title, the player must appear in at least 58 games (out of 82).  </p>
         </div>
       </div>
     </div>
 
+    <!-- Bloc Trophée -->
     <div class="container-middle">
       <div id="trophees">
-        <h2>Trophées</h2>
+        <h2> Trophies </h2>
       </div>
 
+      <!-- Section avec les trophée : MVP, Playoff-->
       <div class="section2">
         <div class="section-image-wrapper center-img-left">
           <img class="image__img" src="images/playoff.png" />
           <div class="image__overlay">
             <div class="image__title">Playoff</div>
-            <p class="image__description">Les playoffs NBA (appelés séries éliminatoires au Canada) sont les séries éliminatoires de la National Basketball Association (NBA). Ils sont organisés en quatre tours et regroupent seize équipes, huit de chaque conférence (dans ce format depuis 1984). Les gagnants du premier tour (first round en anglais) accèdent aux demi-finales de conférence (Conference Semifinals en anglais), et les gagnants des demi-finales de conférence parviennent en finales de conférence (Conference Finals en anglais). Ensuite, les champions de chaque conférence se rencontrent lors des finales NBA (NBA Finals en anglais). Chaque série se joue au meilleur des sept matchsN 1, c'est-à-dire que la première équipe qui gagne 4 matchs remporte la série. Toutes les séries sont jouées en format 2-2-1-1-1, depuis la saison 2013-20141. </p>
+            <p class="image__description">The top 8 NBA teams from each conference are selected to a tournament teams 8 teams from the east conference and 8 teams from West the 8 teams in the eastern conference play against each other the same thing in the west. </p>
           </div>
         </div>
 
@@ -155,9 +178,8 @@
           <img class="image__img" src="images/mvp.png" />
           <div class="image__overlay">
             <div class="image__title">Most Valuable Player</div>
-            <p class="image__description">Le trophée de Most Valuable Player (MVP) est une récompense attribuée chaque année par la National Basketball Association (NBA) au meilleur joueur de la saison régulière. Le trophée porte le nom de Maurice Podoloff, le premier président de la NBA (de 1946 à 1963). Avant la saison 2016-2017 le nom du MVP était généralement annoncé à la fin de la saison régulière, lors du deuxième tour des Playoffs. Depuis, l'ensemble des récompenses sont remises en juin lors d'une cérémonie après la fin des NBA Finals1.
-
-              Tous les anciens MVP remplissant les conditions pour entrer au Basketball Hall of Fame y ont été introduits. Toutefois, certains joueurs classés parmi les meilleurs de l'histoire n'ont jamais obtenu le trophée, tels que Clyde Drexler, Patrick Ewing, Scottie Pippen, Robert Parish ou John Stockton. </p>
+            <p class="image__description">The National Basketball Association Most Valuable Player Award (MVP) is an annual National Basketball Association (NBA) award given since the 1955–56 season to the best performing player of the regular season. The winner receives the Maurice Podoloff Trophy, which is named in honor of the first commissioner (then president) of the NBA, who served from 1946 until 1963. Until the 1979–80 season, the MVP was selected by a vote of NBA players. Since the 1980–81 season, the award is decided by a panel of sportswriters and broadcasters throughout the United States and Canada.               
+              </p>
           </div>
         </div>
       </div>
@@ -171,19 +193,19 @@
       </div>
     </div>
 
+    <!-- Bloc MVP -->
     <div class="container-middle-bottom">
       <div id="mvp">
         <h2>Most Valuable Players</h2>
       </div>
 
+      <!-- Section avec les vainqueurs  MVP : Giannis, Harden, Westbrook-->
       <div class="section3">
         <div class="section-image-wrapper">
           <img class="image__img" src="images/giannis.jpg" />
           <div class="image__overlay">
             <div class="image__title">2019 MVP</div>
-            <p class="image__description">Les exploits individuels de James Harden n’auront pas suffi, Giannis Antetokounmpo a logiquement été élu MVP 2019 lors de la soirée des NBA Awards. Troisième MVP le plus jeune de ses quarante dernières années à seulement 24 ans, la star des Bucks est aussi le deuxième Européen à être récompensé après Dirk Nowitzki en 2007.
-
-              Le Grec (941 points) s’impose avec une confortable avance puisqu’il a reçu 78 des 100 « première place » possibles, laissant le reste à James Harden (776 points). En troisième position, Paul George (356), tandis que Nikola Jokic (212) termine 4e du scrutin, suivi de Stephen Curry (175). LeBron James n’a reçu qu’un point. Tout comme Rudy Gobert qui apparait pour la première fois dans les votes du MVP !</p>
+            <p class="image__description">Giannis Antetokounmpo, the Milwaukee Bucks star, won his second straight Most Valuable Player Award, after another stellar regular season, the N.B.A. announced Friday. He became the first repeat winner of the N.B.A.’s top individual honor since the Golden State Warriors’ Stephen Curry in 2015 and 2016.</p>
           </div>
         </div>
 
@@ -191,7 +213,9 @@
           <img class="image__img" src="images/harden.jpg" />
           <div class="image__overlay">
             <div class="image__title">2018 MVP</div>
-            <p class="image__description">James Harden a été désigné lundi soir, à l'occasion de la cérémonie de remise des trophées individuels, MVP de la saison régulière. Une récompense logique puisqu'il n'y avait guère que LeBron James pour semer le doute dans les têtes tant le niveau de jeu du «King» a été époustouflant pendant la saison régulière. James Harden a été plus fort encore en terminant meilleur marqueur de la saison régulière tout en portant les Houston Rockets en tête de la Conférence Ouest. La franchise Texane a même terminé la saison avec le meilleur bilan de la Ligue (65v-17d).</p>
+            <p class="image__description">Harden, 28, was superb in the 2017-18 season, averaging 30.4 points, 8.8 assists and 5.4 rebounds per game. He combined in the backcourt with offseason addition Chris Paul to lead Houston to a 65-17 record, the best mark in the NBA.
+
+             .</p>
           </div>
         </div>
 
@@ -199,14 +223,13 @@
           <img class="image__img" src="images/westbrook.jpg" />
           <div class="image__overlay">
             <div class="image__title">2017 MVP</div>
-            <p class="image__description">Le titre de MVP de la saison régulière lui était promis, il ne lui a pas échappé. Auteur d'une saison historique, marquée par 42 triple-doubles réussis, Russell Westbrook a logiquement été récompensé de la distinction individuelle la plus prestigieuse lundi soir, à l'occasion de la première cérémonie de remise des trophées individuels de l'histoire de la NBA.
-
-              Plébiscité par les journalistes qui ont voté (69 premières places), il a ainsi devancé James Harden (22) et Kawhi Leonard (9). LeBron James (1) et Isaiah Thomas (0) complètent le Top 5 de la catégorie.</p>
+            <p class="image__description">Westbrook averaged a triple-double of 31.6 points, 10.4 assists and 10.7 rebounds for the Thunder last season after the departure of fellow All-Star Kevin Durant to the Warriors. The former UCLA star also set an NBA record for triple-doubles with 42, surpassing the 55-year-old record held by Oscar Robertson. </p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Trait horizontal -->
     <div class="trait-horizontal"></div>
     <footer id="footer">
       <div class="nba-footer">
@@ -219,6 +242,7 @@
         </div>
       </div>
 
+      <!-- Div pour toutes les élémenst dans le footer -->
       <div class="div2">
         <ul>
           <li><a href="#" class="style">Global Stores</a></li>
@@ -251,12 +275,13 @@
 
       <div class="div5">
         <ul>
-          <li><a href="#" class="style">Developed by Jeneifan CHATHIANATHAN </a></li>
+          <li><a href="https://github.com/KallMeJey/NBA-Website" class="style">Developed by Jeneifan CHATHIANATHAN </a></li>
           <li><a href="#" class="style">32A - UFA</a></li>
           <li><a href="https://nba.com" class="style">Sources : Site NBA</a></li>
         </ul>
       </div>
 
+      <!-- Div regrouopant les réseaux sociaux -->
       <div class="icone-reseaux-sociaux-footer">
         <a href="https://Facebook.com" class="fa fa-facebook style"></a>
         <a href="https://instagram.com" class="fa fa-instagram style"></a>

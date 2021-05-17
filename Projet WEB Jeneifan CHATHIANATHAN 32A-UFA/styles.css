@@ -196,10 +196,6 @@ body {
   margin-left: 2rem;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 /* Div Center */
 .center {
   margin-left: 30px;
@@ -301,6 +297,85 @@ body {
   text-decoration: underline;
 }
 
+/* Carousel */
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  max-width: 100%;
+  position: relative;
+  margin-top: 50px;
+  /* margin-left: 155px; */
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  color: #f2f2f2;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.numbertext {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+.avant,.apres {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.apres {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.avant {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 /* Style */
 .style {
   color: #000;
@@ -372,6 +447,7 @@ body {
 
 /* Media Queries */
 
+/* Le site a éte principalement concu sous un format mobile, des mediaqueries ont été utilisé dans le but d'étendre le site sous d'autres format : Iphone X, Ipad, Ecran PC*/
 /* Résolution Tablette iPad : 768PX */
 @media (min-width: 768px) {
 
@@ -425,7 +501,9 @@ body {
   } 
 }
 /* Résolution Petit Écran  */
-
+@media (max-width:500px){
+  
+}
 @media (min-width: 992px) {
   .icone-reseaux-sociaux {
     display: inherit;
@@ -438,7 +516,7 @@ body {
   .numero {
     display: inherit;
   }
-
+  /* Sections */
   .section {
     flex-direction: row !important;
   }
@@ -449,7 +527,8 @@ body {
   .section3 {
     flex-direction: row !important;
   }
-
+  
+  /* Center */
   .center-row-img {
     margin: 0 1rem !important;
   }
@@ -516,6 +595,12 @@ body {
     margin-left: 155px;
     margin-right: 155px;
   }
+
+  .carousel {
+    margin-left: 155px;
+    margin-right: 155px;
+
+  }
 }
 /* Résolution à partir de 1200 px */
 @media (max-width: 1200px) {
@@ -550,5 +635,6 @@ body {
     text-align: center;
     margin-left: 15px;
   }
+
 }
 
