@@ -4,8 +4,8 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: Roboto,Arial,sans-serif;
-  letter-spacing: 0.025em;
-  font-size: 1rem;
+  letter-spacing: 0.4px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -29,7 +29,7 @@ body {
 .nba img {
   display: inline-block;
 
-  margin-right: 0.6rem;
+  margin-right: 10px;
   height: 30px;
 }
 
@@ -39,21 +39,21 @@ body {
 
 .nba-nom {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 0.7;
 }
 
 .nba-titre {
   color: #999;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
 .numero {
   text-transform: uppercase;
   display: none;
-  margin-right: 3rem;
+  margin-right: 48px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   color: #666;
 }
@@ -72,7 +72,7 @@ body {
 .icone-reseaux-sociaux a {
   color: #000;
   text-decoration: none;
-  margin: 0.7rem;
+  margin: 11px;
   margin-left: 10px;
 }
 /* Icone trois barre */
@@ -90,9 +90,9 @@ body {
 
 .trait-vertical {
   width: 1px;
-  height: 2rem;
+  height: 32px;
   display: none;
-  margin-right: 2rem;
+  margin-right: 32px;
   background-color: grey;
 }
 .trait-horizontal {
@@ -163,12 +163,12 @@ body {
 }
 
 #footer > div {
-  margin-top: 4rem;
+  margin-top: 64px;
 }
 .nba-footer img {
   display: inline-block;
 
-  margin-right: 0.6rem;
+  margin-right: 64px;
   height: 30px;
 }
 
@@ -178,13 +178,13 @@ body {
 
 .nba-nom-footer {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 0.7;
 }
 
 .nba-titre-footer {
   color: #999;
-  font-size: 0.8rem;
+  font-size: 13px;
 }
 
 /* Icone Réseaux sociaux */
@@ -196,7 +196,7 @@ body {
   margin: 20;
   color: #000;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 32px;
 }
 
 /* Div Center */
@@ -217,6 +217,8 @@ body {
 
 .center p {
   text-align: justify;
+  margin-right:20px;
+
 }
 
 .description {
@@ -229,7 +231,9 @@ body {
 
 .description-sous-titre {
   color: #0253a5;
+
 }
+
 
 .ListStatistiques li {
   float: left;
@@ -273,7 +277,7 @@ body {
   margin: 20;
   color: #000;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 13px;
 }
 
 /* ID */
@@ -385,7 +389,7 @@ body {
 /* IMAGE HOVER */
 .section-image-wrapper {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .image__img {
@@ -424,15 +428,14 @@ body {
 }
 
 .image__title {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bold;
-  color: hsl(0, 0%, 0%);
+  color: #000;
 }
 
 .image__description {
-  font-size: 0.9rem;
-  margin-top: 0.25em;
-  color: hsl(0, 0%, 45%);
+  margin-top: 4px;
+  color: #666;
 }
 
 
@@ -466,7 +469,7 @@ body {
   }
 
   #first-center-image {
-    margin-right: 3rem;
+    margin-right: 3;
   }
 
   .section2-image-wrapper > img {
@@ -522,15 +525,15 @@ body {
   
   /* Center */
   .center-row-img {
-    margin: 0 1rem !important;
+    margin: 0 16px !important;
   }
 
   .center-row-img-left {
-    margin: 0 0.5rem 0 1rem !important;
+    margin: 0 0.5rem 0 16px !important;
   }
 
   .center-row-img-right {
-    margin: 0 1rem 0 0.5rem !important;
+    margin: 0 16px 0 0.5rem !important;
   }
 
   .center-img-left {
