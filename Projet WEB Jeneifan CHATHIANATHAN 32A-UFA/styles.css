@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(255, 255, 255);
   font-family: Roboto,Arial,sans-serif;
@@ -299,10 +302,6 @@ body {
 
 /* Carousel */
 
-* {
-  box-sizing: border-box;
-}
-
 .carousel {
   max-width: 100%;
   position: relative;
@@ -325,14 +324,6 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.numbertext {
-  position: absolute;
-  top: 0;
-  font-size: 12px;
-  padding: 8px 12px;
-  color: white;
-}
-
 .active {
   background-color: #717171;
 }
@@ -342,6 +333,7 @@ body {
   animation-duration: 1.5s;
 }
 
+/* Définit l'étape quand on fade */
 @keyframes fade {
   from {
       opacity: 0.4
